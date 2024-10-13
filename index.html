@@ -1,147 +1,114 @@
-/* Global Styles */
-body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI-powered Genetic Disease Database for early diagnosis and research.">
+    <title>Genetic Disease Database</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Genetic Disease Database</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#database">Database</a></li>
+                <li><a href="#ai-tools">AI Tools</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-header {
-    background-color: #003366;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Empowering Genetic Insights for Early Diagnosis and Treatment</h2>
+            <p>A comprehensive, AI-driven database to enhance understanding, diagnosis, and management of genetic diseases.</p>
+            <div class="hero-buttons">
+                <a href="#database" class="btn">Explore the Database</a>
+                <a href="#ai-tools" class="btn">AI-Powered Diagnosis</a>
+            </div>
+        </div>
+    </section>
 
-header .logo img {
-    height: 50px;
-    margin-right: 15px;
-}
+    <!-- Features Section -->
+    <section class="features" id="about">
+        <h2>Why Choose Our Platform?</h2>
+        <div class="features-container">
+            <div class="feature-item">
+                <h3>Advanced AI Integration</h3>
+                <p>AI algorithms assist in diagnosis and provide accurate predictions.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Comprehensive Disease Catalog</h3>
+                <p>A detailed, up-to-date listing of genetic diseases with key clinical data.</p>
+            </div>
+            <div class="feature-item">
+                <h3>User-Centric Design</h3>
+                <p>Easy navigation for researchers, professionals, and the public with accessibility features.</p>
+            </div>
+        </div>
+    </section>
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
+    <!-- Search Section -->
+    <section class="search" id="database">
+        <h2>Search Our Genetic Disease Database</h2>
+        <input type="text" placeholder="Enter disease name or keyword...">
+        <button>Search</button>
+        <p>Advanced Search Filters: Disease Type | Symptom Onset | Chromosome Affected | Inheritance Pattern</p>
+    </section>
 
-header nav ul li a {
-    color: white;
-    font-weight: bold;
-}
+    <!-- AI Tools Section -->
+    <section class="ai-tools" id="ai-tools">
+        <h2>Leverage AI for Accurate Insights</h2>
+        <p>Explore our AI tools designed for accurate genetic disease diagnosis, pattern recognition, and prediction models.</p>
+        <a href="#ai-tools" class="btn">Try AI Tools Now</a>
+    </section>
 
-/* Hero Section */
-.hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-}
+    <!-- Research Section -->
+    <section class="research" id="research">
+        <h2>Stay Informed with the Latest Genetic Research</h2>
+        <div class="research-articles">
+            <article>
+                <h3>New Insights into Genetic Disorders</h3>
+                <p>A breakthrough in understanding rare genetic diseases...</p>
+                <a href="#">Read More</a>
+            </article>
+            <article>
+                <h3>AI-Assisted Genetic Research</h3>
+                <p>How AI is shaping the future of genetic research...</p>
+                <a href="#">Read More</a>
+            </article>
+            <article>
+                <h3>Improving Early Diagnosis Techniques</h3>
+                <p>Techniques that improve diagnosis at earlier stages...</p>
+                <a href="#">Read More</a>
+            </article>
+        </div>
+    </section>
 
-.hero-text h2 {
-    font-size: 3em;
-    margin-bottom: 20px;
-}
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#home">Home</a> |
+                <a href="#about">About Us</a> |
+                <a href="#database">Database</a> |
+                <a href="#ai-tools">AI Tools</a> |
+                <a href="#research">Research</a> |
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
 
-.hero-buttons .btn {
-    padding: 10px 20px;
-    background-color: #009688;
-    color: white;
-    border-radius: 5px;
-    margin: 10px;
-    cursor: pointer;
-}
+</body>
+</html>
 
-.hero-buttons .btn:hover {
-    background-color: #00796B;
-}
-
-/* Features Section */
-.features {
-    padding: 50px 20px;
-    background-color: white;
-    text-align: center;
-}
-
-.features h2 {
-    font-size: 2.5em;
-    margin-bottom: 40px;
-}
-
-.features-container {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-}
-
-.feature-item {
-    width: 30%;
-    padding: 20px;
-    background-color: #f1f1f1;
-    border-radius: 10px;
-}
-
-.feature-item img {
-    width: 50px;
-    margin-bottom: 20px;
-}
-
-/* Search Section */
-.search {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #003366;
-    color: white;
-}
-
-.search input[type="text"] {
-    padding: 10px;
-    width: 300px;
-    border-radius: 5px;
-    border: none;
-    margin-right: 10px;
-}
-
-.search button {
-    padding: 10px 20px;
-    background-color: #009688;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Footer */
-footer {
-    background-color: #003366;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-links a {
-    margin: 0 10px;
-    color: white;
-}
-
-.social-media a img {
-    width: 30px;
-    margin: 0 10px;
-}
 
